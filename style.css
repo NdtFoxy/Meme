@@ -1,0 +1,72 @@
+/* Основные стили для центровки */
+body, html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e1e;
+    font-family: Arial, sans-serif;
+}
+
+.roulette-wrapper {
+    text-align: center;
+}
+
+.roulette-container {
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.roulette {
+    display: flex;
+    transition: transform 5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.item {
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #fff;
+    border-right: 2px solid #1e1e1e;
+}
+
+/* Цвета предметов */
+.common { background-color: #b0c3d9; }
+.rare { background-color: #4b69ff; }
+.epic { background-color: #8847ff; }
+.legendary { background-color: #d32ce6; }
+
+/* Стили кнопки */
+.spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.spin-button:hover {
+    background-color: #21867a;
+}
+
+/* Стрелка */
+.arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
